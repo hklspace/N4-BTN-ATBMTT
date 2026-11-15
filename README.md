@@ -76,7 +76,7 @@ python main.py test
 
 Bộ kiểm thử gồm 22 ca, kiểm tra kết quả DH với các bộ số nhỏ và nhóm 2048 bit; kiểm tra khóa công khai, mã hóa tệp, chữ ký RSA, mô phỏng tấn công và sinh tham số. Một số ca đối chiếu kết quả với `pow`, `hashlib`, `hmac`, `cryptography`, OpenSSL hoặc các giá trị chuẩn.
 
-Kết quả được lưu tại `output/test\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_report.txt`.
+Kết quả được lưu tại `output/test_report.txt`.
 
 ## Cấu trúc thư mục
 
@@ -86,14 +86,14 @@ dh-project/
 ├── dhcrypto/                # Các thuật toán mật mã
 │   ├── modmath.py           # Phép toán modulo và ký hiệu Jacobi
 │   ├── primes.py            # Kiểm tra và sinh số nguyên tố
-│   ├── primitive\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_root.py    # Kiểm tra và tìm căn nguyên thủy
+│   ├── primitive_root.py    # Kiểm tra và tìm căn nguyên thủy
 │   ├── groups.py            # Các nhóm tham số DH
 │   ├── dh.py                # Sinh, kiểm tra và trao đổi khóa DH
 │   ├── sha256.py            # Hàm băm SHA-256
 │   ├── kdf.py               # HMAC-SHA256 và HKDF
 │   ├── chacha20.py          # Mã dòng ChaCha20
-│   ├── file\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_cipher.py       # Mã hóa và giải mã tệp
-│   ├── rsa\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_sign.py          # Chữ ký RSA
+│   ├── file_cipher.py       # Mã hóa và giải mã tệp
+│   ├── rsa_sign.py          # Chữ ký RSA
 │   ├── attacks.py           # Các phương pháp giải logarit rời rạc
 │   └── protocol.py          # Mô phỏng Alice, Bob và Mallory
 ├── app/                     # Giao diện và các chức năng demo
