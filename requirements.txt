@@ -1,0 +1,5 @@
+# Chương trình chính không sử dụng thư viện ngoài.
+# Thư viện dưới đây chỉ để bộ kiểm thử so kết quả, không bắt buộc:
+cryptography>=41
+# Chỉ dùng cho tools/derive_rfc_groups.py khi muốn tính lại hằng số RFC:
+# mpmath>=1.3
